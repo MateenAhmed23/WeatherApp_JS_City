@@ -1,0 +1,27 @@
+body {
+    overflow: hidden; /* Hide scrollbars */
+}
+
+
+.container{
+    height: 100vh;
+}
+
+.isCentered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color:rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    color: white;
+    width: 25%;
+    border-radius: 2rem;
+}
+
+.descdiv{
+    display: flex;
+}
