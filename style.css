@@ -1,5 +1,6 @@
 body {
     overflow: hidden; /* Hide scrollbars */
+    box-sizing: border-box;
 }
 
 
@@ -25,3 +26,38 @@ body {
 .descdiv{
     display: flex;
 }
+
+
+.cityInput{
+    width: 75%;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+}
+
+.form button{
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+
+.desc{
+    text-transform: capitalize;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .card{
+        width: 50%;
+    }
+  }

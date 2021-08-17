@@ -78,6 +78,8 @@ const displayWeather = (... data) =>{
 searchButton.addEventListener('click', e=>{
     const input= inputCity.value;
 
+    document.body.style.backgroundImage = `url("https://source.unsplash.com/1600x900/?${input}")`;
+
     // console.log(input);
 
     if(input !== '')
@@ -86,4 +88,22 @@ searchButton.addEventListener('click', e=>{
     }
 })
 
+inputCity.addEventListener('keypress', e=>{
+    if(e.key === 'Enter')
+    {
+        const input= inputCity.value;
+
+        document.body.style.backgroundImage = `url("https://source.unsplash.com/1600x900/?${input}")`;
+
+        // console.log(input);
+
+        if(input !== '')
+        {
+            fetchWeather(input);
+        }
+    }
+})
+
 fetchWeather('London');
+document.body.style.backgroundImage = `url("https://source.unsplash.com/1600x900/?London")`;
+
